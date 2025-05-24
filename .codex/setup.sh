@@ -7,6 +7,6 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 export PATH="$HOME/.cargo/bin:$HOME/.local/bin:$PATH"
 
 echo "[*] Installing Python dependencies from pyproject.toml..."
-uv pip install --system --project .
+uv sync
 
 echo "[*] Setup complete. You can now run 'python bot.py'"
