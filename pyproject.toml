@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "whattsanddrops"
+version = "0.1.0"
+description = "A Python project"
+requires-python = ">=3.8"
+readme = "README.md"
+
+[project.dependencies]
+# Add your dependencies here, for example:
+# requests = ">=2.28.0"
+
+[project.optional-dependencies]
+dev = [
+    # Development dependencies, for example:
+    # "pytest>=7.0.0",
+    # "black>=23.0.0",
+]
