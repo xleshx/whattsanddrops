@@ -1,6 +1,6 @@
 # Whattsanddrops
 
-A Python project managed with uv.
+A simple Telegram bot project managed with uv.
 
 ## Setup
 
@@ -18,4 +18,12 @@ uv pip install -e ".[dev]"
 
 ## Usage
 
-Add usage instructions here.
+Set the `TELEGRAM_TOKEN` environment variable and run:
+
+```bash
+python bot.py
+```
+
+## Deployment
+
+The project includes a GitHub Actions workflow that builds a Docker image and pushes it to [GitHub Container Registry](https://ghcr.io). Authentication is handled automatically using `GITHUB_TOKEN`.
