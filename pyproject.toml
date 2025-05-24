@@ -9,13 +9,11 @@ description = "A Python project"
 requires-python = ">=3.8"
 readme = "README.md"
 dependencies = [
-    # Add your dependencies here, for example:
-    # "requests>=2.28.0",
+    "python-telegram-bot>=21.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    # Development dependencies, for example:
-    # "pytest>=7.0.0",
-    # "black>=23.0.0",
+    "pytest>=7.0.0",
+    "black>=23.0.0",
 ]
