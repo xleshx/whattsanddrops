@@ -21,7 +21,7 @@ uv pip install -e ".[dev]"
 Set the `TELEGRAM_TOKEN` environment variable and run:
 
 ```bash
-python bot.py
+python -m whattsanddrops.main
 ```
 
 ## Deployment
