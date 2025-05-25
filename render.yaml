@@ -1,0 +1,10 @@
+services:
+  - type: worker
+    name: whattsanddrops-bot
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: TELEGRAM_TOKEN
+        sync: false
