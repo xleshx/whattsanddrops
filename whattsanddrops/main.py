@@ -20,11 +20,9 @@ def main() -> None:
     if not token:
         raise RuntimeError("TELEGRAM_TOKEN environment variable not set")
 
-    # application = ApplicationBuilder().token(token).build()
-    # application.add_handler(CommandHandler("start", start))
-    # application.run_polling()
-
-    print("Hello, I am your bot!")
+    application = ApplicationBuilder().token(token).build()
+    application.add_handler(CommandHandler("start", start))
+    application.run_polling()
 
 
 if __name__ == "__main__":
