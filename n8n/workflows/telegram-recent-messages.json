@@ -1,0 +1,28 @@
+{
+  "name": "Telegram Recent Messages",
+  "nodes": [
+    {
+      "parameters": {
+        "url": "https://api.telegram.org/bot{{$env.TELEGRAM_TOKEN}}/getUpdates",
+        "responseFormat": "json",
+        "jsonParameters": false,
+        "queryParametersUi": {
+          "parameter": [
+            {
+              "name": "limit",
+              "value": "10"
+            }
+          ]
+        }
+      },
+      "name": "Get Updates",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 2,
+      "position": [
+        450,
+        300
+      ]
+    }
+  ],
+  "connections": {}
+}
